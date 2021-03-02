@@ -32,7 +32,8 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to='/sign-up' className='btn-mobile'>
+    // <Link rel={'external'} target="_blank" to={"https://fontawesome.com/icons/google?style=brands"} className='btn-mobile'>
+      // <a href={"https://www.google.com"} target="_blank" className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
@@ -40,6 +41,7 @@ export const Button = ({
       >
         {children}
       </button>
-    </Link>
+      // </a>
+    // </Link>
   );
 };
